@@ -9,6 +9,7 @@ const UpcomingSubscriptionCard = ({ name, price, daysLeft, icon, currency } : Up
                 <View>
                     <Text className="upcoming-price">{formatCurrency(price, currency)}</Text>
                     <Text className="upcoming-meta" numberOfLines={1}>{daysLeft > 1 ? `${daysLeft} days left` : "Last day"}</Text>
+                    <Text className="upcoming-name">{name}</Text>
                 </View>
             </View>
 
